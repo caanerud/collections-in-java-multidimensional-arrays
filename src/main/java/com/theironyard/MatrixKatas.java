@@ -31,4 +31,15 @@ public class MatrixKatas {
      * @return A two dimensional array of integers where the value is the product of the array indexes
      */
     // todo: create createProductTable() method
+    public static int[][] createProductTable(int a, int b){
+
+        int[][] products = new int[a][b];
+        for(int i = 0 ; i < a ; i++) {
+            for (int q = 0; q < b; q++) {
+
+                products[i][q] = i * q;
+            }
+        }
+return products;
+    }
 }
